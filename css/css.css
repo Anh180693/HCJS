@@ -1,0 +1,57 @@
+body {
+    overflow-x: hidden;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#header {
+    min-height: 200px;
+    width: auto;
+}
+
+.container {
+    padding-left: 20%!important;
+    padding-right: 20%!important;
+}
+
+.top-header {
+    background-color: rgb(230, 230, 59);
+}
+
+.top-header-content {
+    padding: 5% 0;
+}
+
+.black-arrow {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.content-header {
+    padding: 0 10%;
+}
+
+.bottom-header-content {
+    font-size: 10rem;
+    height: 50%;
+}
+
+.bottom-header-content a {
+    background: linear-gradient( to top, white, white 5rem, transparent 1rem, transparent 100%);
+}
+
+.input-form {
+    padding: 10px 50px;
+    border: none;
+}
+
+.input-form input {
+    padding-left: 10px!important;
+    padding: 0 12px!important;
+    border: none;
+    box-shadow: 1px 1px 30px rgba(127, 137, 161, 0.25);
+    height: 50px;
+}
