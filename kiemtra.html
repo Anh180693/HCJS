@@ -1,31 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/css.css">
 </head>
+
 <body>
-<form>
-    <label>
-        <span class="nmoncd">Name on Card</span>
-        <input name="nameoncard" type="text" placeholder="John Smith">
-    </label>
-    
-    <label>
-        <span class="cdnum">Card Number</span>
-        <input name="cardnumber" type="text" placeholder="•••• •••• •••• ••••">
-    </label>
-    <label class="cvc">
-        <span class="cvcnum">CVC</span>
-        <input name="cvcnumber" type="text" placeholder="XXX">
-    </label>
-    <label class="exp">
-        <span class="expdt">Exp. Date</span>
-        <input name="experationdate" type="text" placeholder="MM/YY">
-    </label>
-    <button type="submit">
-        Make A Payment
-    </button>
-</form>
+<div id="header">
+    <div class="container">
+        <div class="top-header">
+            <div class="top-header-content">
+                <div class="content-header row">
+                    <div role="button" class="col-1"><i class="fa-regular fa-arrow-left-long black-arrow" style="text-align: center; "></i></div>
+                    <div class="col-11" style="text-align: center; font-weight: bold; opacity: 50%; font-size: 20px;">Checkout Form</div>
+                </div>
+                <div class="mid-header d-flex justify-content-center align-items-center row pt-5">
+                    <p class="col-7" style="font-size: 30px; text-align: right; word-spacing: 5px;">
+                        Total To Pay
+                    </p>
+                    <p class="col-5" style="font-size: 50px;">
+                        <b>93</b>
+                        <b style="font-size: 20px; opacity: 70%;">$</b>
+                    </p>
+                </div>
+            </div>
+            <div class="bottom-header">
+                <div class="bottom-header-content row">
+                    <a href="" class="col-6 d-flex justify-content-center"><i class="fa-brands fa-cc-visa"></i></a>
+                    <a href="" class="col-6 d-flex justify-content-center"><i class="fa-brands fa-cc-paypal"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main container">
+    <div class="main-content">
+        <div class="input-form row">
+            <label for="name">Name on Card</label>
+            <input type="text" id="name" class="m-3" placeholder="John Smith">
+        </div>
+        <div class="input-form carNumber row">
+            <div class="col-6">
+                <label for="cardNum">Card Number</label>
+                <input type="text" id="cardNum" class="m-2" placeholder="**********">
+            </div>
+            <div class="col-6">
+                <label for="CVV">CVV</label>
+                <input type="text" id="CVV" class="m-2" placeholder="*">
+            </div>
+        </div>
+        <div class="input-form row">
+            <label for="expiration">Expiration Date</label>
+            <input type="text" id="expiration" class="m-3" placeholder="MM / YY">
+        </div>
+        <div class="input-form row">
+            <div role="button" class="btn btn-danger bg-danger text-light col-6">Make A Payment</div>
+        </div>
+    </div>
+</div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js "></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js "></script>
+
 </html>
